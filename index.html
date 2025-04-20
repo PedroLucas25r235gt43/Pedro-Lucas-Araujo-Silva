@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-
-scale=1.0">
-
-<title>Implementação</title>
-<link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0   
+<title>Jogo de Matemática</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="cabecalho">
 <div class="container">
-<img src="IMG/Logo.svg" alt="logotipo"
+<h1>Jogo de Matemática</h1>
+<p>Escolha o modo do jogo:</p>
+<button onclick="iniciarJogo('basico')">Modo Básico</button>
+<button onclick="iniciarJogo('desafio')">Modo Desafio</button>
 
-class="container imagem">
-<h1 class="container titulo">
-    Biblioteca Start
-    </h1>
-    <p class="container frase">
-    "Aqui cada livro é um <i>start</i> para o seu
-    
-    conhecimento!"</p>
-    </div>
-    </header>
-    </body>
-    </html>
+    <div id="area-jogo" style="display: none;">
+<p id="pergunta"></p>
+<input type="number" id="resposta" placeholder="Digite sua resposta">
+<button onclick="verificarResposta()">Responder</button>
+
+    <p id="resultado"></p>
+<button onclick="novaPergunta()">Nova Pergunta</button>
+<p>Pontuação: <span id="pontuacao"></span></p>
+</div>
+</div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
