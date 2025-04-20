@@ -5,7 +5,7 @@ let modoAtual = 'basico';
 
 // Função que inicia o jogo com o modo escolhido
 function iniciarlogo(modo) {
-modoñtual = modo;
+modoAtual = modo;
 document.getElementById("area-jogo").style.display "block"; 
 novaPergunta();
 }
